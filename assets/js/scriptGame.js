@@ -5,11 +5,6 @@ var idCheck = []; // helper array for storing clicked fields IDs so i can remove
 var counter = 0;
 var end = 0; // for detecting if all fields are done
 var fields = document.querySelectorAll(".back");
-var natureSound = new Audio("https://k003.kiwi6.com/hotlink/2ai7iwz2j6/nature.mp3");
-var spark = new Audio("https://k003.kiwi6.com/hotlink/qdpr7bioht/spark.mp3");
-var win = new Audio("https://k003.kiwi6.com/hotlink/eptlrqspgk/win.mp3");
-
-
 var images = [
 	"https://res.cloudinary.com/nikola1970/image/upload/v1456692132/ananas_uukegu.png",
 	"https://res.cloudinary.com/nikola1970/image/upload/v1456692133/apple_khwnkz.png",
@@ -62,7 +57,6 @@ function restart() {
 
 function checkEnd() {
 	if (end === 24) { //if all 24 fields are uncovered
-		win.play();
 		alert("Game is over! Your score is " + counter);
 		restart();
 	}
@@ -79,8 +73,6 @@ function shuffleArray(array) { // shuffle array with images
 }
 
 function startGame() {
-
-	natureSound.play(); // play the background music
 
 	var arr = shuffleArray(images); // stores the array of shuffled images
 
@@ -105,7 +97,6 @@ function check() {
 				idCheck = []; // same with this one
 				$(".field").on("click", clicked); // bind the click back again
 			} else {
-				spark.play();
 				counter++;
 				end += 2; // if there is a match "end" is raised by 2 as 2 fields are uncovered
 				checkArray = []; // empty array for the next try
