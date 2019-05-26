@@ -5,9 +5,9 @@ var idCheck = []; // helper array for storing clicked fields IDs so i can remove
 var counter = 0;
 var end = 0; // for detecting if all fields are done
 var fields = document.querySelectorAll(".back");
-var natureSound = new Audio("http://k003.kiwi6.com/hotlink/2ai7iwz2j6/nature.mp3");
-var spark = new Audio("http://k003.kiwi6.com/hotlink/qdpr7bioht/spark.mp3");
-var win = new Audio("http://k003.kiwi6.com/hotlink/eptlrqspgk/win.mp3");
+var natureSound = new Audio("https://k003.kiwi6.com/hotlink/2ai7iwz2j6/nature.mp3");
+var spark = new Audio("https://k003.kiwi6.com/hotlink/qdpr7bioht/spark.mp3");
+var win = new Audio("https://k003.kiwi6.com/hotlink/eptlrqspgk/win.mp3");
 
 
 var images = [
