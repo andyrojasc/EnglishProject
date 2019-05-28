@@ -1,4 +1,3 @@
-$backgroundLoad: #3187a9;
 
 @keyframes unlock-circle {
     0% {
@@ -39,7 +38,7 @@ $backgroundLoad: #3187a9;
 #preload {
     width: 100%;
     height: 100%;
-    background-color: $backgroundLoad;
+    background-color: $white;
     z-index: 1000;
     top: 0;
     left: 0;
@@ -59,7 +58,7 @@ $backgroundLoad: #3187a9;
 }
 
 .base {
-    background-color: #ecf0f1;
+    background-color: $primary;
     width: 200px;
     height: 170px;
     border-radius: 30px;
@@ -70,7 +69,7 @@ $backgroundLoad: #3187a9;
 }
 
 .base-bottom {
-    background-color: #bdc3c7;
+    background-color: $primary;
     width: 200px;
     height: 85px;
     border-radius: 0 0 30px 30px;
@@ -84,7 +83,7 @@ $backgroundLoad: #3187a9;
     width: 110px;
     border-radius: 45px;
     z-index: 10;
-    background-color: #bdc3c7;
+    background-color: $primary;
     position: relative;
     margin: 0 auto;
     bottom: 150px;
@@ -98,7 +97,7 @@ $backgroundLoad: #3187a9;
     width: 50px;
     border-radius: 30px;
     z-index: 20;
-    background-color: $backgroundLoad;
+    background-color: $white;
     position: relative;
     margin: 0 auto;
     top: 25px;
@@ -111,7 +110,7 @@ $backgroundLoad: #3187a9;
     position: relative;
     height: 50px;
     width: 50px;
-    background-color: $backgroundLoad;
+    background-color: $white;
     bottom: 230px;
     left: 170px;
     z-index: 80;
@@ -121,7 +120,6 @@ $backgroundLoad: #3187a9;
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background-color: black;
     z-index: 300;
     position: relative;
     bottom: 45px;
@@ -131,7 +129,6 @@ $backgroundLoad: #3187a9;
 .lock-inside-bottom {
     width: 30px;
     height: 80px;
-    background-color: black;
     z-index: 300;
     position: relative;
     bottom: 85px;
