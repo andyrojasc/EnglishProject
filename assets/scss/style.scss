@@ -51,12 +51,12 @@ $quarternary: #7cbd1e;
         font-family: 'Anton', sans-serif;
         letter-spacing: 1px;
         color: rgba(0, 0, 0, 0.67);
-        padding: 2px;
     }
     .result p {
         font-size: 46px;
         font-family: 'News Cycle', sans-serif;
-        color: #EA5345;
+        color: $primary;
+        margin: 0em;
     }
     span {
         text-align: center;
@@ -110,7 +110,7 @@ $quarternary: #7cbd1e;
         margin-top: 20px;
     }
     .front {
-        background: url(../img/front.jpg) no-repeat top left;
+        background: url(../img/card.png) no-repeat top left;
         width: 100%;
         height: 100%;
         border-radius: 8px;
