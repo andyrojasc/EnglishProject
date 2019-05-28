@@ -3,7 +3,6 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
 @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
-
 $font-primary: 'Overpass',
 Arial,
 sans-serif;
@@ -17,9 +16,7 @@ $primary: #204473;
 $secondary: #206E8C;
 $tertiary: #4E9DA6;
 $quarternary: #7cbd1e;
-
 @import "animation";
-
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
@@ -68,6 +65,11 @@ $quarternary: #7cbd1e;
     }
     .result {
         text-align: center;
+    }
+    .inner-wrap img {
+        max-width: 96%;
+        height: auto;
+        margin-top: 0px;
     }
 }
 
