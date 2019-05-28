@@ -3,6 +3,7 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
 @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import "animation";
 $font-primary: 'Overpass',
 Arial,
 sans-serif;
@@ -16,6 +17,7 @@ $primary: #204473;
 $secondary: #206E8C;
 $tertiary: #4E9DA6;
 $quarternary: #7cbd1e;
+
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;

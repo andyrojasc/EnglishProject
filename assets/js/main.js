@@ -135,7 +135,6 @@
                  $('.number').each(function() {
                      var $this = $(this),
                          num = $this.data('number');
-                     console.log(num);
                      $this.animateNumber({
                          number: num,
                          numberStep: comma_separator_number_step
@@ -254,6 +253,9 @@
          event.preventDefault();
          $('html,body').animate({ scrollTop: $(this.hash).offset().top - 59 }, 800);
      });
-
-
  })(jQuery);
+
+ jQuery(window).on('load',function(){
+    $("#preload").delay(1500).fadeOut(1000);
+    $("#ready-screen").delay(2500).fadeIn(1000);
+  });
