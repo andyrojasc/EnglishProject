@@ -255,7 +255,7 @@
      });
  })(jQuery);
 
- jQuery(window).on('load',function(){
-    $("#preload").delay(1500).fadeOut(1000);
-    $("#ready-screen").delay(2500).fadeIn(1000);
-  });
+ jQuery(window).on('load', function() {
+     $("#preload").delay(1500).fadeOut(1000);
+     $("#ready-screen").delay(2500).fadeIn(1000);
+ });

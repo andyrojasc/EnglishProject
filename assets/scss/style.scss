@@ -16,6 +16,7 @@ $primary: #204473;
 $secondary: #206E8C;
 $tertiary: #4E9DA6;
 $quarternary: #7cbd1e;
+$primaryClr: #fed75a; // Adjust this value to change the color
 @import "animation";
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
