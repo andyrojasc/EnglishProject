@@ -111,7 +111,7 @@ $(document).ready(function() {
     }
 
     function checkEnd() {
-        if (end === 2) { //if all 24 fields are uncovered
+        if (end === 24) { //if all 24 fields are uncovered
             alert("Memory game is over but you have a last chance in the question game be ready ");
             $('#table-game').hide();
             $('#begin').click();
