@@ -1,5 +1,9 @@
 $(document).ready(function() {
-    var audio = document.getElementById("audio");
+    var audioBad = document.getElementById("badAudio");
+    var audioGood = document.getElementById("goodAudio");
+    var audioFinal = document.getElementById("finalAudio");
+    var errorAudio = document.getElementById("errorAudio");
+  
     //section memorie
     var checkArray = []; // checking if both clicked fields are the same fruit
     var idCheck = []; // helper array for storing clicked fields IDs so i can remove "flipped" class if they are different
@@ -57,7 +61,7 @@ $(document).ready(function() {
     function badCard(){
         if(checkArray[0] === "assets/img/bad-card.jpeg" || checkArray[1] === "assets/img/bad-card.jpeg"){
             console.log(checkArray[0]);
-            audio.play();
+            audioBad.play();
             $('#table-game').addClass('animated shake');
             $(".field").off("click", clicked); // disabling click event to prevet shit
             setTimeout(function() {
@@ -108,7 +112,7 @@ $(document).ready(function() {
 
     function checkEnd() {
         if (end === 2) { //if all 24 fields are uncovered
-            alert("Game is over! Your score is " + counter);
+            alert("Memory game is over but you have a last chance in the question game be ready ");
             $('#table-game').hide();
             $('#begin').click();
           
@@ -146,11 +150,13 @@ $(document).ready(function() {
                 if (checkArray[0] !== checkArray[1]) { // if there is  no match
                     $("#" + idCheck[0]).find(".inner-wrap").removeClass("flipped"); // flip the field back
                     $("#" + idCheck[1]).find(".inner-wrap").removeClass("flipped"); // second one flip back as well
+                    errorAudio.play();
                     counter++;
                     checkArray = []; //empty checking array for the next 2 clicks
                     idCheck = []; // same with this one
                     $(".field").on("click", clicked); // bind the click back again
                 }else {
+                  audioGood.play();
                     counter++;
                     end += 2; // if there is a match "end" is raised by 2 as 2 fields are uncovered
                     checkArray = []; // empty array for the next try
@@ -201,7 +207,7 @@ $(document).ready(function() {
         $('#question').append('<p class="number">Question ' + questionNumber + ' of ' + quizArray.length + '</p>');
         $('#question').append('<p class="questions">' + quizArray[question].question + '</p>');
         $('#question').append('<div><div class="choose"><input type="radio" name="options" value="option1">' + quizArray[question].options[0] + '</div><div class="choose"><input type="radio" name="options" value="option2">' + quizArray[question].options[1] + '</div><div class="choose"><input type="radio" name="options" value="option3">' + quizArray[question].options[2] + '</div><div class="choose"><input type="radio" name="options" value="option4">' + quizArray[question].options[3] + '</div></div>');
-        $('#question').append('<button id="next" disabled>Next</button>');
+        $('#question').append('<button id="next" disabled class="mb-4">Next</button>');
         question++;
         questionNumber++;
     }
@@ -232,16 +238,17 @@ $(document).ready(function() {
       
         $('#question').on('click', '#next', function (){
           if(answer === quizArray[question - 1].answer) {
-            if(counter >= 0){
-              counter -= 5;
-              document.querySelector(".counter").innerHTML = counter;
+            audioGood.play();
+            counter -= 5;
+            if(counter < 0){
+              counter = 0;
             }
-            
+            document.querySelector(".counter").innerHTML = counter;
           }else{
-            if(counter >= 0){
+            errorAudio.play();
               counter += 5;
               document.querySelector(".counter").innerHTML = counter;
-            }
+            
           }
           $('#question').children().remove();
           checkQ();
@@ -253,11 +260,22 @@ $(document).ready(function() {
       
         $('#question').on('click', '#submit', function(){
           if(answer === quizArray[question - 1].answer) {
-            result++;  
+         
+            counter -= 5;
+            if(counter < 0){
+              counter = 0;
+            }
+            document.querySelector(".counter").innerHTML = counter;
+          }else{
+            
+              counter += 5;
+              document.querySelector(".counter").innerHTML = counter;
+            
           }
+          audioFinal.play();
           $('#question').css('display', 'none');
           $('#result').css('display', 'block');
-          $('#result').append('<div class=results><p>Thanks for completing the test</p><p>You scored <span class="score">' + result + ' </span>out of <span class="score">' + quizArray.length + '</span></p>');
+          $('#result').append('<div class=results><p>Thanks for completed the game </p>');
           $('#result').append('<button id="finish">Finish</button>');
         });
       

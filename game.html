@@ -7,23 +7,33 @@
     <title>Memory Game</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/question.css">
-   
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/scriptGame.js"></script>
-    
+
     <link rel="stylesheet" href="./assets/css/animate.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
+
 </head>
 
 <body>
 
     <div class="wrapper">
-            
-            <audio id="audio" >
-                    <source type="audio/wav" src="./assets/sounds/badcard.wav">
-                    </audio>
+
+        <audio id="badAudio">
+            <source type="audio/wav" src="./assets/sounds/bad.wav">
+        </audio>
+        <audio id="goodAudio">
+            <source type="audio/wav" src="./assets/sounds/good.wav">
+        </audio>
+        <audio id="finalAudio">
+            <source type="audio/wav" src="./assets/sounds/final.wav">
+        </audio>
+        <audio id="errorAudio">
+            <source type="audio/wav" src="./assets/sounds/error.wav">
+        </audio>
         <h1>Cibersecurity Memory Game</h1>
         <div class="result">
             <p>Result</p>
@@ -211,16 +221,16 @@
                     <div class="back"></div>
                 </div>
             </div>
-                        
-                
-            
-             
-            </div>
-            <button hidden id='begin'></button>
-            <div id='question'></div>
-            <div id='result'></div>
+
+
+
+
         </div>
-        
+        <button hidden id='begin'></button>
+        <div id='question'></div>
+        <div id='result'></div>
+    </div>
+
 </body>
 
 </html>
