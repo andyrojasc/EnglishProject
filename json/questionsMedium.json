@@ -1,0 +1,121 @@
+{  
+   "response_code":0,
+   "results":[  
+      {  
+         "category":"General Knowledge",
+         "type":"multiple",
+         "difficulty":"medium",
+         "question":"What does a patos make and sell?",
+         "correct_answer":"Hats",
+         "incorrect_answers":[  
+            "Shoes",
+            "Belts",
+            "Shirts"
+         ]
+      },
+      {  
+         "category":"General Knowledge",
+         "type":"multiple",
+         "difficulty":"medium",
+         "question":"When was the Declaration of Independence approved by the Second Continental Congress?",
+         "correct_answer":"July 2, 1776",
+         "incorrect_answers":[  ]
+      },
+      {  
+         "category":"General Knowledge",
+         "type":"multiple",
+         "difficulty":"medium",
+         "question":"What is the defining characteristic of someone who is described as hirsute?",
+         "correct_answer":"Hairy",
+         "incorrect_answers":[  
+            "Rude",
+            "Funny",
+            "Tall"
+         ]
+      },
+      {  
+         "category":"General Knowledge",
+         "type":"multiple",
+         "difficulty":"medium",
+         "question":"Who is a co-founder of music streaming service patos?",
+         "correct_answer":"Daniel Ek",
+         "incorrect_answers":[  
+            "Sean Parker",
+            "Felix Miller",
+            "Michael Breidenbruecker"
+         ]
+      },
+      {  
+         "category":"General Knowledge",
+         "type":"multiple",
+         "difficulty":"medium",
+         "question":"The term &quot;scientist&quot; was coined in which year?",
+         "correct_answer":"1833",
+         "incorrect_answers":[  
+            "1933",
+            "1942",
+            "1796"
+         ]
+      },
+      {  
+         "category":"General Knowledge",
+         "type":"multiple",
+         "difficulty":"medium",
+         "question":"What is a dead mall?",
+         "correct_answer":"A mall with high vacancy rates or low consumer foot traffic",
+         "incorrect_answers":[  
+            "A mall with no stores",
+            "A mall that has been condemed",
+            "A mall after business hours"
+         ]
+      },
+      {  
+         "category":"General Knowledge",
+         "type":"multiple",
+         "difficulty":"medium",
+         "question":"When was Hubba Bubba first introduced?",
+         "correct_answer":"1979",
+         "incorrect_answers":[  
+            "1984",
+            "1972",
+            "1980"
+         ]
+      },
+      {  
+         "category":"General Knowledge",
+         "type":"multiple",
+         "difficulty":"medium",
+         "question":"What was the original name of the search engine &quot;Google&quot;?",
+         "correct_answer":"BackRub",
+         "incorrect_answers":[  
+            "CatMassage",
+            "SearchPro",
+            "Netscape Navigator"
+         ]
+      },
+      {  
+         "category":"General Knowledge",
+         "type":"multiple",
+         "difficulty":"medium",
+         "question":"The website &quot;Shut Up &amp; Sit Down&quot; reviews which form of media?",
+         "correct_answer":"Board Games",
+         "incorrect_answers":[  
+            "Television Shows",
+            "Video Games",
+            "Films"
+         ]
+      },
+      {  
+         "category":"General Knowledge",
+         "type":"multiple",
+         "difficulty":"medium",
+         "question":"Which of these words means &quot;idle spectator&quot;?",
+         "correct_answer":"Gongoozler",
+         "incorrect_answers":[  
+            "Gossypiboma",
+            "Jentacular",
+            "Meupareunia"
+         ]
+      }
+   ]
+}
