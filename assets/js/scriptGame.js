@@ -300,12 +300,10 @@ $(document).ready(function() {
 			      console.log("shit");
 			    } else {
 			      // Data saved successfully!
-			       console.log("Wiiii");
+                  window.location.replace("https://andyrojasc.github.io/EnglishProject/");
 			    }
 		});
-
-        limpiar();
-        window.location.replace("https://andyrojasc.github.io/EnglishProject/");
+        
     });
 
 
