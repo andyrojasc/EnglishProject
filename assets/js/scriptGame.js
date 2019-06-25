@@ -284,6 +284,11 @@ $(document).ready(function() {
     });
 
     $('#result').on('click', '#finish', function() {
+<<<<<<< HEAD
+=======
+        window.location.replace("https://andyrojasc.github.io/EnglishProject/");
+        
+>>>>>>> master
         var person = prompt("Please enter your name:");
         if (person == null || person == "") {
             window.alert("Your new name is: Mr.boring");
@@ -304,8 +309,12 @@ $(document).ready(function() {
 			    }
 		});
 
+<<<<<<< HEAD
         limpiar();
         window.location.replace("https://andyrojasc.github.io/EnglishProject/");
+=======
+		limpiar();
+>>>>>>> master
     });
 
 
