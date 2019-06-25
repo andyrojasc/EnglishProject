@@ -297,7 +297,7 @@ $(document).ready(function() {
 		   }, function(error) {
 			    if (error) {
 			      // The write failed...
-			      console.log("shit");
+			      window.alert("If you can see this message, call the project manager");
 			    } else {
 			      // Data saved successfully!
                   window.location.replace("https://andyrojasc.github.io/EnglishProject/");
