@@ -1,8 +1,12 @@
+// var database = firebase.database();
+
 $(document).ready(function() {
     var audioBad = document.getElementById("badAudio");
     var audioGood = document.getElementById("goodAudio");
     var audioFinal = document.getElementById("finalAudio");
     var errorAudio = document.getElementById("errorAudio");
+
+    
 
     //section memorie
     var checkArray = []; // checking if both clicked fields are the same fruit
@@ -132,7 +136,6 @@ $(document).ready(function() {
     }
 
     function startGame() {
-
         var arr = shuffleArray(images); // stores the array of shuffled images
 
         for (var i = 0; i < fields.length; i++) { // appending those images to the div with class "back"
@@ -281,7 +284,29 @@ $(document).ready(function() {
     });
 
     $('#result').on('click', '#finish', function() {
-        window.location.replace("https://andyrojasc.github.io/EnglishProject/")
+        window.location.replace("https://andyrojasc.github.io/EnglishProject/");
+        
+        var person = prompt("Please enter your name:");
+        if (person == null || person == "") {
+            window.alert("Your new name is: Mr.boring");
+            var person = "Mr.boring"
+        }
+
+	  	console.log("n: "+person+" t: "+counter);
+	  	firebase.database().ref("englishprojecttm5300").push({
+		    person: person,
+		    score: counter,
+		   }, function(error) {
+			    if (error) {
+			      // The write failed...
+			      console.log("shit");
+			    } else {
+			      // Data saved successfully!
+			       console.log("Wiiii");
+			    }
+		});
+
+		limpiar();
     });
 
 
