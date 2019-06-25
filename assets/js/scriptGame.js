@@ -186,7 +186,7 @@ $(document).ready(function() {
             answer: 'option1'
         },
         {
-            question: 'Which is the cyber attacks that asks for exchange of money?',
+            question: 'Which is the cyber attack that asks for exchange of money?',
             options: ['Malware', 'Vishing', 'Ransomware', 'Social engineering'],
             answer: 'option3'
         },
@@ -196,7 +196,7 @@ $(document).ready(function() {
             answer: 'option2'
         },
         {
-            question: 'The importance of cybersecurity is..',
+            question: 'The importance of cybersecurity is to..',
             options: ['Protect the user&#39;s information', 'Make sure everyone is safe on the internet.', 'Encrypt all the data from a computer in exchange for money.', 'Make sure no one tries to steal the users information.'],
             answer: 'option1'
         },
@@ -284,8 +284,6 @@ $(document).ready(function() {
     });
 
     $('#result').on('click', '#finish', function() {
-        window.location.replace("https://andyrojasc.github.io/EnglishProject/");
-        
         var person = prompt("Please enter your name:");
         if (person == null || person == "") {
             window.alert("Your new name is: Mr.boring");
@@ -306,7 +304,8 @@ $(document).ready(function() {
 			    }
 		});
 
-		limpiar();
+        limpiar();
+        window.location.replace("https://andyrojasc.github.io/EnglishProject/");
     });
 
 
